@@ -72,8 +72,8 @@ export const DATA = {
           , Working on developing WeeWee API and leveraging other companies APIs using Node.js and Express.js server with Typescript and Swagger for documentation`
     },
     {
-      company: "Freelancer",
-      badges: [],
+      company: "Self Employed",
+      badges: ['Freelance'],
       href: "/",
       location: "Remote",
       title: "Full-stack Developer",
@@ -83,11 +83,11 @@ export const DATA = {
       description: "Developed and maintained a variety of websites, APIs using Express Js, and applications using React and Next Js according to client needs. Improved performance, security, and user engagement for multiple projects."
     },
     {
-      company: "Ellabs | Skill House School",
-      badges: [],
+      company: "Private Schools",
+      badges: ['Ellabs', 'Skill House School'],
       href: "/",
       location: "Remote",
-      title: "Course Instractor",
+      title: "Course Instructor",
       logoUrl: "/course-instructor.jpeg",
       start: "March 2023",
       end: "Fabrury 2024",
@@ -164,7 +164,7 @@ export const DATA = {
       video: "/video/web3.mp4",
     },
     {
-      title: "IMAGE TO BASE64-PLUS",
+      title: "Image To Base64 Plus",
       href: "https://www.imagetobase64-plus.com/",
       dates: "August 2023",
       active: true,
@@ -261,7 +261,7 @@ export const DATA = {
       video: "/video/ecommerce.mp4",
     },
     {
-      title: "Internation Space Station Tracker 3D",
+      title: "International Space Station Tracker 3D",
       href: "/",
       dates: "October 2022",
       active: true,
@@ -320,7 +320,7 @@ export const DATA = {
       dates: "September, 2023",
       location: "Alger, Algeria",
       description: `
-          We developed a school management dashboard that manages student and cources they take also a calendar management.`,
+          We developed a school management dashboard that manages student and courses they take also a calendar management.`,
       image:
           "/hackwave-hackathon.png",
       links: [
