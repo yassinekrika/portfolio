@@ -3,7 +3,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Yassine KRIKA",
-  initials: "DV",
+  initials: "YK",
   url: "https://yassg4mer.space",
   location: "Jijel, Algeria",
   locationLink: "",
