@@ -159,6 +159,7 @@ export const DATA = {
         "Remix",
         "Shadcn Ui"
       ],
+      links: [],
       image: "",
       video: "/video/web3.mp4",
     },
