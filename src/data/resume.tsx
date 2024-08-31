@@ -98,7 +98,7 @@ export const DATA = {
   ],
   education: [
     {
-      school: "University of Jijel",
+      school: "University of Jijel ",
       href: "http://univ-jijel.dz/",
       degree: "Master's Degree of Computer Forensics and Multimedia",
       logoUrl: "/university-jijel.jpg",
