@@ -11,7 +11,7 @@ export const DATA = {
     "Software Engineer who loves building innovative solutions and empowering others through technology.",
   summary:
     "[Computer science engineer](/#education) specializing in full-stack web development, with expertise in API development using [Node Js and Express Js](/#skills). Skilled in crafting interactive, data-driven dashboards with [Angular and Next Js](/#skills), dedicated to delivering impactful solutions and enhancing user engagement.",
-  avatarUrl: "/me.jpeg",
+  avatarUrl: "https://ucarecdn.com/8d2fa444-76f9-4658-b05b-2bb75d719940/me.jpeg",
   skills: [
     "TypeScript",
     "JavaScript",
@@ -82,7 +82,7 @@ export const DATA = {
       href: "https://landing.weeweedelivery.com",
       location: "Remote",
       title: "Software Engineer",
-      logoUrl: "/weewee-logo.svg",
+      logoUrl: "https://ucarecdn.com/7f72a9a4-a95c-4668-891c-9abad8d7bb6d/weeweevlogo.svg",
       start: "October 2023",
       end: "Present",
       description:
@@ -99,7 +99,7 @@ export const DATA = {
       href: "/",
       location: "Remote",
       title: "Full-stack Developer",
-      logoUrl: "/freelance.jpeg",
+      logoUrl: "https://ucarecdn.com/33c61555-3fc2-4577-ab82-9567993240e2/freelance.jpeg",
       start: "Jun 2023",
       end: "Present",
       description:
@@ -111,7 +111,7 @@ export const DATA = {
       href: "/",
       location: "Remote",
       title: "Course Instructor",
-      logoUrl: "/course-instructor.jpeg",
+      logoUrl: "https://ucarecdn.com/6e04dadf-ff9c-4b5b-aba5-57ef48a2d1bc/courseinstructor.jpeg",
       start: "March 2023",
       end: "Fabrury 2024",
       description: `
@@ -124,7 +124,7 @@ export const DATA = {
       school: "University of Jijel ",
       href: "http://univ-jijel.dz/",
       degree: "Master's Degree of Computer Forensics and Multimedia",
-      logoUrl: "/university-jijel.jpg",
+      logoUrl: "https://ucarecdn.com/9b4ff4cf-49ed-4263-b925-a74a1efc184c/universityjijel.jpg",
       start: "2022",
       end: "2024",
     },
@@ -132,7 +132,7 @@ export const DATA = {
       school: "University of Jijel",
       href: "http://univ-jijel.dz/",
       degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/university-jijel.jpg",
+      logoUrl: "https://ucarecdn.com/9b4ff4cf-49ed-4263-b925-a74a1efc184c/universityjijel.jpg",
       start: "2018",
       end: "2022",
     },
@@ -166,7 +166,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/weewee.mp4",
+      video: "https://ucarecdn.com/bfbbee95-cb9a-4f8d-bb6c-d5e5374c85a9/weewee.mp4",
     },
     {
       title: "Blockchain based system for healthcare management",
@@ -186,7 +186,7 @@ export const DATA = {
       ],
       links: [],
       image: "",
-      video: "/video/web3.mp4",
+      video: "https://ucarecdn.com/eaa26c24-8d55-40bf-ba86-ddf2d5281026/web3.mp4",
     },
     {
       title: "Image To Base64 Plus",
@@ -222,7 +222,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/web-tools.mp4",
+      video: "https://ucarecdn.com/85784ef3-c9be-4416-8817-2b1e6bd87b6b/webtools.mp4",
     },
     {
       title: "Summarize Articles OpenAI GPT 4",
@@ -251,7 +251,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/summarizer.mp4",
+      video: "https://ucarecdn.com/42f2a049-ab68-4f51-88fd-c6a616a727fd/summarizer.mp4",
     },
     {
       title: "Ecommerce Website Design",
@@ -286,7 +286,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/ecommerce.mp4",
+      video: "https://ucarecdn.com/bdac87ce-7d96-410a-ab95-b18b58eb2f42/ecommerce.mp4",
     },
     {
       title: "International Space Station Tracker 3D",
@@ -315,7 +315,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/nasa.mp4",
+      video: "https://ucarecdn.com/74f87ea7-a4db-4337-974c-8c06410065ad/nasa.mp4",
     },
     {
       title: "KYO UI Design",
@@ -341,7 +341,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/video/junction.mp4",
+      video: "https://ucarecdn.com/f6ad3a00-b94a-4cad-a57f-b859bb426514/junction.mp4",
     },
   ],
   hackathons: [
@@ -351,7 +351,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed a school management dashboard that manages student and courses they take also a calendar management.`,
-      image: "/hackwave-hackathon.png",
+      image: "https://ucarecdn.com/084ddd5b-1c50-476b-ad2f-735763671112/hackwavehackathon.png",
       links: [
         {
           title: "Github",
@@ -366,7 +366,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed an Android application and a chrome extension powered with Chat gpt Api to response automatically for emails and a voice chatbot to let users ineract with the Ai.`,
-      image: "/junction-hackathon.png",
+      image: "https://ucarecdn.com/bafc89ab-bfe9-4ee9-8f78-575774da4f21/junctionhackathon.png",
       links: [
         {
           title: "Figma",
@@ -382,7 +382,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed an open-source online application that tracks the space station and accurately represents the Earth, the orbit of the station, and the station itself in three dimensions.`,
-      image: "/nasa-hackathon.jpeg",
+      image: "https://ucarecdn.com/e064d5a2-fe95-41fd-9ea8-b0c66e20b5db/nasahackathon.jpeg",
       links: [
         {
           title: "Github",
