@@ -34,6 +34,7 @@ export const DATA = {
     "Firebase",
     "Oracle",
     "Linux",
+    "Docker",
     "Github",
     "GCP",
     "Figma",
