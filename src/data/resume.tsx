@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Software Engineer who loves building innovative solutions and empowering others through technology.",
   summary:
-    "[Computer science engineer](/#education) specializing in full-stack web development, with expertise in API development using [Node Js and Express Js](/#skills). Skilled in crafting interactive, data-driven dashboards with [Angular and Next Js](/#skills), dedicated to delivering impactful solutions and enhancing user engagement.",
+    "[Software engineer](/#education) specializing in full-stack web development, with expertise in API development using [Node Js and Express Js](/#skills). Skilled in crafting interactive, data-driven dashboards with [Angular and Next Js](/#skills), dedicated to delivering impactful solutions and enhancing user engagement.",
   avatarUrl: "/yassine.jpg",
   skills: [
     "TypeScript",
