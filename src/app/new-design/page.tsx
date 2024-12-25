@@ -71,6 +71,7 @@ const Page = () => {
                 className="absolute inset-0"
               >
                 <Particles
+                  className="absolute inset-0"
                   quantity={300}
                   ease={100}
                   color={color}
