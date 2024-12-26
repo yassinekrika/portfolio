@@ -15,11 +15,11 @@ export default function NavbarToggle() {
           variant="ghost"
           type="button"
           size="icon"
-          className="px-2 border"
+          className="px-2 border bg-white hover:bg-white"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
-          <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden dark:text-neutral-200" />
-          <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block dark:text-neutral-200" />
+          <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden" />
+          <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block" />
         </Button>
       </div>
     </div>

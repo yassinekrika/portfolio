@@ -1,21 +1,24 @@
 'use client'
 
+import HackathonSnapCard from '@/components/HackathonSnapCard'
 import BlurFade from '@/components/magicui/blur-fade'
 import { ProjectMagicCard } from '@/components/project-magic-card'
 import { Card, CardContent, CardDescription, CardTitle } from '@/components/ui/card'
 import IconCloud from '@/components/ui/icon-cloud'
+import { MagicCard } from '@/components/ui/magic-card'
 import Meteors from '@/components/ui/meteors'
 import Particles from '@/components/ui/particles'
 import TypingAnimation from '@/components/ui/typing-animation'
 import { DATA } from '@/data/resume'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react';
 
 
 const Page = () => {
   const greeting = "Hi, I'm Yassine";
-  const paragraph = 'Software Engineer | Full-Stack Js';
+  const paragraph = 'Software Engineer | Full-Stack';
   const question = "What do you do?";
   const summary = 'Software engineer specializing in full-stack web development, with expertise in API development using Node Js and Express Js. Skilled in crafting interactive, data-driven dashboards with Angular and Next Js, dedicated to delivering impactful solutions and enhancing user engagement.'
   const slugs = [
@@ -66,7 +69,6 @@ const Page = () => {
     const diff = current
     setScrollDirection(diff == 0 ? "up" : "down")
   });
-
   
 
 
@@ -85,18 +87,18 @@ const Page = () => {
                 >
                   <div className="w-full flex flex-col items-center gap-6 mx-2">
                     <div className="w-full flex flex-col gap-2 items-end ">
-                      <div className="bg-gray-200 text-black px-4 py-2 rounded-2xl">
+                      <div className="bg-black text-white dark:text-black dark:bg-white px-4 py-2 rounded-2xl">
                         {question}
                       </div>
                     </div>
                     <div className='w-full flex justify-start '>
-                      <Card className="w-[300px] border rounded-2xl">
+                      <MagicCard gradientColor={resolvedTheme === "dark" ? "#262626" : "#D9D9D955"} className="w-[300px] border rounded-2xl">
                         <CardContent className="p-4">
                           <div className="text-md font-normal">
                             <TypingAnimation className='text-base text-black dark:text-white leading-6 font-normal' duration={30}>{summary}</TypingAnimation>
                           </div>
                         </CardContent>
-                      </Card>
+                      </MagicCard>
                     </div>
                   </div>
                 </motion.div>
@@ -201,6 +203,36 @@ const Page = () => {
                     </div>
                   </div>
                 </motion.div>
+              </AnimatePresence>
+            </div>
+          </section>
+
+          <section id="hackathons" className='snap-y snap-mandatory overflow-auto'>
+            <div className="max-w-4xl mx-auto pb-80">
+              <AnimatePresence>
+                  <div className='w-full flex flex-col items-center gap-10 px-2'>
+                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
+                      <div className='flex flex-col items-center gap-10'>
+                        <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>I like building things</h1>
+                        <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
+                          During my time in university, I attended 3+ hackathons. People from around the country would come together and build incredible things in 2-3 days.                      </p>
+                      </div>
+                    </motion.div>
+                    <div className=''>
+                        {DATA.hackathons.map((item, index) => (
+                          <div key={index} className='w-full h-screen snap-center flex flex-col justify-center items-center'>
+                            
+                            <HackathonSnapCard 
+                              title={item.title} 
+                              description={item.description} 
+                              img={item.image} 
+                              date={item.dates}
+                            />
+                          </div>
+                        ))}
+                      
+                    </div>
+                  </div>
               </AnimatePresence>
             </div>
           </section>

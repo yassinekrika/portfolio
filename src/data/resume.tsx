@@ -352,7 +352,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed a school management dashboard that manages student and courses they take also a calendar management.`,
-      image: "https://ucarecdn.com/084ddd5b-1c50-476b-ad2f-735763671112/hackwavehackathon.png",
+      image: "/hackwave-hackathon.png",
       links: [
         {
           title: "Github",
@@ -367,7 +367,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed an Android application and a chrome extension powered with Chat gpt Api to response automatically for emails and a voice chatbot to let users ineract with the Ai.`,
-      image: "https://ucarecdn.com/bafc89ab-bfe9-4ee9-8f78-575774da4f21/junctionhackathon.png",
+      image: "/junction-hackathon.png",
       links: [
         {
           title: "Figma",
@@ -383,7 +383,7 @@ export const DATA = {
       location: "Alger, Algeria",
       description: `
           We developed an open-source online application that tracks the space station and accurately represents the Earth, the orbit of the station, and the station itself in three dimensions.`,
-      image: "https://ucarecdn.com/e064d5a2-fe95-41fd-9ea8-b0c66e20b5db/nasahackathon.jpeg",
+      image: "/nasa-hackathon.jpeg",
       links: [
         {
           title: "Github",
