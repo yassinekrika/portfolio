@@ -81,7 +81,7 @@ export function ProjectMagicCard({
             />
           )}
         </Link>
-        <CardHeader className="px-2">
+        <CardHeader className="px-2 mb-5">
           <div className="space-y-1">
             <CardTitle className="mt-1 mb-5 text-lg">{title}</CardTitle>
             <div className="hidden font-sans text-xs underline print:visible">

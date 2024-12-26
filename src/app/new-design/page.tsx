@@ -6,14 +6,10 @@ import { Card, CardContent, CardDescription, CardTitle } from '@/components/ui/c
 import IconCloud from '@/components/ui/icon-cloud'
 import Meteors from '@/components/ui/meteors'
 import Particles from '@/components/ui/particles'
-import RetroGrid from '@/components/ui/retro-grid'
-import RippleButton from '@/components/ui/ripple-button'
 import TypingAnimation from '@/components/ui/typing-animation'
 import { DATA } from '@/data/resume'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
-import { FileTextIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import Link from 'next/link'
 import React, { useEffect, useState } from 'react';
 
 
@@ -71,13 +67,15 @@ const Page = () => {
     setScrollDirection(diff == 0 ? "up" : "down")
   });
 
+  
+
 
   return (
     <main>
       <section id="hero" >
         <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
           {scrollDirection === 'down' ? (
-            <div>
+            <>
               <AnimatePresence>
                 <motion.div
                   initial={{ opacity: 0, translateY: 60 }}
@@ -119,7 +117,7 @@ const Page = () => {
                 />
 
               </motion.div>
-            </div>
+            </>
           ) : (
             <>
               <motion.div
@@ -142,26 +140,26 @@ const Page = () => {
                 color={color}
                 refresh
               />
-              <Meteors number={5} />
+              <Meteors number={20} />
             </>
           )}
         </div>
         <div className='w-full h-[1px]'></div>
       </section>
       {scrollDirection === 'down' && (
-        <>
+        <div className='mb-[700px]'>
           <section id='skills'>
-            <div className='max-w-2xl mx-auto pb-80'>
+            <div className='max-w-4xl mx-auto pb-80'>
               <AnimatePresence>
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
                   <div className='w-full flex flex-col items-center gap-10'>
                     <div className='flex flex-col items-center gap-10'>
                       <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Tech Stack</h1>
-                      <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
+                      <p className="w-[80%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
                         Proficient in Angular, React, Next.js, Node.js, Express.js, Sql, NoSql, delivering scalable full-stack solutions.
                       </p>
                     </div>
-                    <div className='w-[70%]'>
+                    <div className='w-[50%]'>
                       <IconCloud iconSlugs={slugs} />
                     </div>
                   </div>
@@ -207,25 +205,7 @@ const Page = () => {
             </div>
           </section>
 
-          <section id="contact">
-            <div className='relative w-full h-[700px]'>
-              <div className='absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
-                  <div className='flex flex-col justify-center items-center gap-10'>
-                    <h1 className='text-3xl font-bold  tracking-tighter sm:text-5xl'>Get in Touch</h1>
-                    <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
-                      Shoot me a dm
-                    </p>
-                    <RippleButton><Link href='https://linkedin.com/in/yassinekrika' target='_blank'>Linked In</Link></RippleButton>
-                  </div>
-                </motion.div>
-              </div>
-              <RetroGrid angle={50} />
-            </div>
-          </section>
-
-
-        </>
+        </div>
       )}
     </main>
   );
