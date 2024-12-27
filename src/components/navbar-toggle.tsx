@@ -9,7 +9,7 @@ import { MoonIcon, SunIcon } from "lucide-react";
 export default function NavbarToggle() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="pointer-events-none fixed right-0 bottom-0 z-30 m-4 flex origin-bottom h-full max-h-14 ">
+    <div className="pointer-events-none fixed right-0 bottom-0 z-30 m-6 flex origin-bottom h-full max-h-14 ">
       <div className="z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center transform-gpu">
         <Button
           variant="ghost"

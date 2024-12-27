@@ -69,7 +69,7 @@ const Page = () => {
     const diff = current
     setScrollDirection(diff == 0 ? "up" : "down")
   });
-  
+
 
 
   return (
@@ -172,67 +172,68 @@ const Page = () => {
 
           <section id="projects">
             <div className="max-w-4xl mx-auto pb-80">
-              <AnimatePresence>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
-                  <div className='w-full flex flex-col items-center gap-10 px-2'>
+              <div className='w-full flex flex-col items-center gap-10 px-2'>
+                <AnimatePresence>
+                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
                     <div className='flex flex-col items-center gap-10'>
                       <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Check out my latest work</h1>
                       <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
                         I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
                       </p>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 mt-10">
-                      {DATA.projects.map((project, id) => (
-                        <BlurFade
-                          key={project.title}
-                          delay={0.04 * 12 + id * 0.05}
-                        >
-                          <ProjectMagicCard
-                            href={project.href}
-                            key={project.title}
-                            title={project.title}
-                            description={project.description}
-                            dates={project.dates}
-                            tags={project.technologies}
-                            image={project.image}
-                            video={project.video}
-                            links={project.links}
-                          />
-                        </BlurFade>
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+                  </motion.div>
+                </AnimatePresence>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 mt-10">
+                  {DATA.projects.map((project, id) => (
+                    <BlurFade
+                      key={project.title}
+                      delay={0.04 * 12 + id * 0.05}
+                    >
+                      <ProjectMagicCard
+                        href={project.href}
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        dates={project.dates}
+                        tags={project.technologies}
+                        image={project.image}
+                        video={project.video}
+                        links={project.links}
+                      />
+                    </BlurFade>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </section>
 
           <section id="hackathons" className='snap-y snap-mandatory overflow-auto'>
             <div className="max-w-4xl mx-auto pb-80">
               <AnimatePresence>
-                  <div className='w-full flex flex-col items-center gap-10 px-2'>
-                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
-                      <div className='flex flex-col items-center gap-10'>
-                        <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>I like building things</h1>
-                        <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
-                          During my time in university, I attended 3+ hackathons. People from around the country would come together and build incredible things in 2-3 days.                      </p>
-                      </div>
-                    </motion.div>
-                    <div className=''>
-                        {DATA.hackathons.map((item, index) => (
-                          <div key={index} className='w-full h-screen snap-center flex flex-col justify-center items-center'>
-                            
-                            <HackathonSnapCard 
-                              title={item.title} 
-                              description={item.description} 
-                              img={item.image} 
-                              date={item.dates}
-                            />
-                          </div>
-                        ))}
-                      
+                <div className='w-full flex flex-col items-center gap-10 px-2'>
+                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
+                    <div className='flex flex-col items-center gap-10'>
+                      <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>I like building things</h1>
+                      <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
+                        During my time in university, I attended 3+ hackathons. People from around the country would come together and build incredible things in 2-3 days.                      </p>
                     </div>
+                  </motion.div>
+                  <div className=''>
+                    {DATA.hackathons.map((item, index) => (
+                      <div key={index} className='w-full h-screen snap-center flex flex-col justify-center items-center'>
+
+                        <HackathonSnapCard
+                          title={item.title}
+                          description={item.description}
+                          img={item.image}
+                          date={item.dates}
+                        />
+                      </div>
+                    ))}
+
                   </div>
+                </div>
               </AnimatePresence>
             </div>
           </section>

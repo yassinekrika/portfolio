@@ -50,13 +50,9 @@ export function ProjectMagicCard({
 
 
   return (
-    <MagicCard
-        gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
-  
-        className={
-          "flex flex-col rounded-2xl overflow-hidden border p-8 transition-all duration-300 ease-out h-full"
-        }
-      >
+    <motion.div initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }}  transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: true, amount: 0.2 }}>
+
+      <MagicCard gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"} className={"flex flex-col rounded-2xl overflow-hidden border p-8 transition-all duration-300 ease-out h-full"}>
         <Link
           href={href || "#"}
           className={cn("block cursor-pointer mb-5", className)}
@@ -122,6 +118,7 @@ export function ProjectMagicCard({
           )}
         </CardFooter>
       </MagicCard>
+      </motion.div>
     
   );
 }

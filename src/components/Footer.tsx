@@ -19,7 +19,7 @@ const Footer = () => {
   }, [resolvedTheme]);
 
   return (
-    <div className='relative w-full h-[700px] bg-black dark:bg-white'>
+    <footer className='relative w-full overflow-hidden h-[700px] bg-black dark:bg-white'>
       <div className='absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2'>
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
           <div className='flex flex-col justify-center items-center gap-10'>
@@ -55,7 +55,7 @@ const Footer = () => {
         refresh
       />
       <Meteors number ={20} />
-    </div>
+    </footer>
   )
 }
 
