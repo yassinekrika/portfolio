@@ -86,8 +86,7 @@ export const DATA = {
       logoUrl: "",
       start: "April 2025",
       end: "Present",
-      description:
-        "Developed and maintained a variety of websites, APIs using Express Js, and applications using React and Next Js according to client needs. Improved performance, security, and user engagement for multiple projects.",
+      description: "As a Frontend Developer at OTA, I contribute to building responsive and user-centric web applications using Angular and React. My role involves transforming UI/UX designs from Figma into fully functional, high-performance interfaces, ensuring seamless user experiences across devices. I collaborate closely with designers and backend teams to implement scalable, maintainable, and visually engaging solutions aligned with modern web standards."    
     },
     {
       company: "WeeWee Delivery",
@@ -100,11 +99,11 @@ export const DATA = {
       end: "Mars 2025",
       description:
         `As a web developer in my role, i specialize in crafting interactive and data-driven dashboards using Angular and Firebase. my mission is to transform complex data into intuitive user experiences, leveraging real-time updates for dynamic content. i am dedicated to pushing the boundaries of web development to create impactful solutions that drive results and elevate user engagement, currently i am working on :\n
-          , Helping in developing new logistics solution\n
-          , Developing web solution for logistics i helped in launching two of our main services this year (Grand Public + WeePicks)
-          , Developing the WeeWee dashboard using Angular framework and it's core features
-          , Developing the web version of the WeeWee client applications\n
-          , Working on developing WeeWee API and leveraging other companies APIs using Node.js and Express.js server with Typescript and Swagger for documentation`,
+          . Helping in developing new logistics solution\n
+          . Developing web solution for logistics i helped in launching two of our main services this year (Grand Public + WeePicks)
+          . Developing the WeeWee dashboard using Angular framework and it's core features
+          . Developing the web version of the WeeWee client applications\n
+          . Working on developing WeeWee API and leveraging other companies APIs using Node.js and Express.js server with Typescript and Swagger for documentation`,
     },
     {
       company: "Freelancer",
