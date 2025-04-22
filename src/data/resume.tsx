@@ -78,6 +78,18 @@ export const DATA = {
   },
   work: [
     {
+      company: "OTA",
+      badges: [],
+      href: "/",
+      location: "Remote",
+      title: "Frontend Developer",
+      logoUrl: "",
+      start: "April 2025",
+      end: "Present",
+      description:
+        "Developed and maintained a variety of websites, APIs using Express Js, and applications using React and Next Js according to client needs. Improved performance, security, and user engagement for multiple projects.",
+    },
+    {
       company: "WeeWee Delivery",
       badges: [],
       href: "https://landing.weeweedelivery.com",
@@ -85,7 +97,7 @@ export const DATA = {
       title: "Software Engineer",
       logoUrl: "https://ucarecdn.com/7f72a9a4-a95c-4668-891c-9abad8d7bb6d/weeweevlogo.svg",
       start: "October 2023",
-      end: "Present",
+      end: "Mars 2025",
       description:
         `As a web developer in my role, i specialize in crafting interactive and data-driven dashboards using Angular and Firebase. my mission is to transform complex data into intuitive user experiences, leveraging real-time updates for dynamic content. i am dedicated to pushing the boundaries of web development to create impactful solutions that drive results and elevate user engagement, currently i am working on :\n
           , Helping in developing new logistics solution\n
@@ -95,8 +107,8 @@ export const DATA = {
           , Working on developing WeeWee API and leveraging other companies APIs using Node.js and Express.js server with Typescript and Swagger for documentation`,
     },
     {
-      company: "Self Employed",
-      badges: ["Freelance"],
+      company: "Freelancer",
+      badges: [],
       href: "/",
       location: "Remote",
       title: "Full-stack Developer",
@@ -105,19 +117,6 @@ export const DATA = {
       end: "Present",
       description:
         "Developed and maintained a variety of websites, APIs using Express Js, and applications using React and Next Js according to client needs. Improved performance, security, and user engagement for multiple projects.",
-    },
-    {
-      company: "Private Schools",
-      badges: ["Ellabs", "Skill House School"],
-      href: "/",
-      location: "Remote",
-      title: "Course Instructor",
-      logoUrl: "https://ucarecdn.com/6e04dadf-ff9c-4b5b-aba5-57ef48a2d1bc/courseinstructor.jpeg",
-      start: "March 2023",
-      end: "Fabrury 2024",
-      description: `
-      Course instructor at ELLabs teaching the basic fundamental of linux and Git and Github, with 90% students improved in team contribution to projects.
-      Course instructor at Skill House in Fullstack web development , teaching basic fundamental of front-end web development Html, Css, JavaSript, as well as back-end using Node Js, Express Js, Mysql, in database.`,
     },
   ],
   education: [
@@ -140,6 +139,30 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Rostovaa – Financial Education & Empowerment Platform",
+      href: "/",
+      dates: "Mars 2025 - April 2025",
+      active: true,
+      description: "I developed Rostovaa, a financial education platform offering structured courses in affiliate marketing, crypto, and trading. The platform features expert-led communities, subscription management, and real-time interactions—all built to help users grow from beginners to professionals.",
+      technologies: [
+        "Next Js",
+        "Typescript",
+        "Tailwindcss",
+        "Shadcn UI",
+        "Prisma",
+        "Postgresql",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://rostovaa.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/video/rostovaa.mp4",
+    },
+    {
       title: "WeeWee Admin Control",
       href: "/",
       dates: "October 2023 - Present",
@@ -154,18 +177,7 @@ export const DATA = {
         "Nebular Ui Library",
         "Firebase",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://akveo.github.io/nebular/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/akveo/nebular",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+      links: [],
       image: "",
       video: "https://ucarecdn.com/bfbbee95-cb9a-4f8d-bb6c-d5e5374c85a9/weewee.mp4",
     },

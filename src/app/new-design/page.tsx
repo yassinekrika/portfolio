@@ -10,10 +10,9 @@ import Meteors from '@/components/ui/meteors'
 import Particles from '@/components/ui/particles'
 import TypingAnimation from '@/components/ui/typing-animation'
 import { DATA } from '@/data/resume'
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
+import { motion, AnimatePresence, useScroll, useMotionValueEvent, useInView, useTransform } from 'framer-motion'
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 const Page = () => {
@@ -54,9 +53,13 @@ const Page = () => {
     "figma",
   ];
 
+  const skillsRef = useRef(null);
+  const isSkillsSectionInView = useInView(skillsRef, {
+    amount: 'all'
+  });
 
-  const { scrollY } = useScroll();
-  const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>("up")
+  const { scrollY, scrollYProgress } = useScroll();
+  const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>("up");
 
   const { resolvedTheme } = useTheme();
   const [color, setColor] = useState("#ffffff");
@@ -66,11 +69,11 @@ const Page = () => {
   }, [resolvedTheme]);
 
   useMotionValueEvent(scrollY, "change", (current) => {
-    const diff = current
-    setScrollDirection(diff == 0 ? "up" : "down")
+    setScrollDirection(current == 0 ? "up" : "down");
   });
-
-
+  
+  const scale = useTransform(scrollYProgress, [0, 1], [10, 1])
+  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   return (
     <main>
@@ -153,7 +156,7 @@ const Page = () => {
           <section id='skills'>
             <div className='max-w-4xl mx-auto pb-80'>
               <AnimatePresence>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 'all' }}>
                   <div className='w-full flex flex-col items-center gap-10'>
                     <div className='flex flex-col items-center gap-10'>
                       <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Tech Stack</h1>
@@ -161,9 +164,16 @@ const Page = () => {
                         Proficient in Angular, React, Next.js, Node.js, Express.js, Sql, NoSql, delivering scalable full-stack solutions.
                       </p>
                     </div>
-                    <div className='w-[50%]'>
+                    <motion.div
+                      className="w-[50%]"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      // onViewportEnter={() => console.log('enter skills')}
+                      // onViewportLeave={() => console.log('leave skills')}
+                      transition={{ duration: 2.5, ease: 'easeInOut' }}
+                    >
                       <IconCloud iconSlugs={slugs} />
-                    </div>
+                    </motion.div>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -174,7 +184,7 @@ const Page = () => {
             <div className="max-w-4xl mx-auto pb-80">
               <div className='w-full flex flex-col items-center gap-10 px-2'>
                 <AnimatePresence>
-                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
+                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 'all' }}>
                     <div className='flex flex-col items-center gap-10'>
                       <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Check out my latest work</h1>
                       <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
@@ -212,7 +222,7 @@ const Page = () => {
             <div className="max-w-4xl mx-auto pb-80">
               <AnimatePresence>
                 <div className='w-full flex flex-col items-center gap-10 px-2'>
-                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 0.2 }}>
+                  <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 'all' }}>
                     <div className='flex flex-col items-center gap-10'>
                       <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>I like building things</h1>
                       <p className="w-[70%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
