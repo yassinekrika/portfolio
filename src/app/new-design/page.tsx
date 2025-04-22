@@ -159,10 +159,10 @@ const Page = () => {
                 <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true, amount: 'all' }}>
                   <div className='w-full flex flex-col items-center gap-10'>
                     <div className='flex flex-col items-center gap-10'>
-                      <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Tech Stack</h1>
+                      {/* <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Tech Stack</h1>
                       <p className="w-[80%] leading-7 text-center text-muted-foreground text-sm xl:text-base">
                         Proficient in Angular, React, Next.js, Node.js, Express.js, Sql, NoSql, delivering scalable full-stack solutions.
-                      </p>
+                      </p> */}
                     </div>
                     <motion.div
                       className="w-[50%]"
