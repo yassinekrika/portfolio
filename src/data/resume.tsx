@@ -93,7 +93,7 @@ export const DATA = {
       badges: [],
       href: "https://landing.weeweedelivery.com",
       location: "Remote",
-      title: "Software Engineer",
+      title: "Web Developer",
       logoUrl: "https://ucarecdn.com/7f72a9a4-a95c-4668-891c-9abad8d7bb6d/weeweevlogo.svg",
       start: "October 2023",
       end: "Mars 2025",
