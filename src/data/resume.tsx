@@ -154,7 +154,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://rostovaa.vercel.app/",
+          href: "https://rostova.org/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
