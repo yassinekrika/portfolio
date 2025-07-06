@@ -78,12 +78,12 @@ export const DATA = {
   },
   work: [
     {
-      company: "OTA",
+      company: "Djezzy",
       badges: [],
       href: "/",
-      location: "Remote",
-      title: "Frontend Developer",
-      logoUrl: "",
+      location: "On-site",
+      title: "Frontend Web Developer",
+      logoUrl: "Logo_Djezzy_2015.png",
       start: "April 2025",
       end: "Present",
       description: "As a Frontend Developer at OTA, I contribute to building responsive and user-centric web applications using Angular and React. My role involves transforming UI/UX designs from Figma into fully functional, high-performance interfaces, ensuring seamless user experiences across devices. I collaborate closely with designers and backend teams to implement scalable, maintainable, and visually engaging solutions aligned with modern web standards."    
@@ -94,7 +94,7 @@ export const DATA = {
       href: "https://landing.weeweedelivery.com",
       location: "Remote",
       title: "Web Developer",
-      logoUrl: "https://ucarecdn.com/7f72a9a4-a95c-4668-891c-9abad8d7bb6d/weeweevlogo.svg",
+      logoUrl: "weewee_logo.png",
       start: "October 2023",
       end: "Mars 2025",
       description:
@@ -111,7 +111,7 @@ export const DATA = {
       href: "/",
       location: "Remote",
       title: "Full-stack Developer",
-      logoUrl: "https://ucarecdn.com/33c61555-3fc2-4577-ab82-9567993240e2/freelance.jpeg",
+      logoUrl: "",
       start: "Jun 2023",
       end: "Present",
       description:
